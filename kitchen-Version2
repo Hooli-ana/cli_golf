@@ -1,0 +1,196 @@
+Last login: Tue Feb 28 09:01:47 on ttys000
+julianamichelsen ~
+$ homework
+julianamichelsen ~/code/wdi/wdi-tx-10/homework
+$ ls
+kitchen/  kitchen2/
+julianamichelsen ~/code/wdi/wdi-tx-10/homework
+$ cd kitchen2/
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ rm cans.txt
+removed 'cans.txt'
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ cd fridge pwd
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/fridge
+$ pwd
+/Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/fridge
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/fridge
+$ mv trashcan /Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/
+'trashcan' -> '/Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/trashcan'
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/fridge
+$ tree
+.
+├── diapers.txt
+├── freezer
+│   ├── couch.txt
+│   ├── frozenpeas.txt
+│   └── icecream.txt
+└── milk.txt
+
+1 directory, 5 files
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/fridge
+$ cd ..
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ tree
+.
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        ├── delete-me.txt
+        └── dirty-dishes.txt
+
+6 directories, 14 files
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ cd fridge
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/fridge
+$ rm diapers.txt
+removed 'diapers.txt'
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/fridge
+$ cd freezer
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/fridge/freezer
+$ rm couch.txt
+removed 'couch.txt'
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/fridge/freezer
+$ cd ../../
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ cd pantry
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/pantry
+$ cd crisper-drawer
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/pantry/crisper-drawer
+$ cd../
+-bash: cd../: No such file or directory
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/pantry/crisper-drawer
+$ cd ..
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/pantry
+$ mv crisper-drawer /Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/fridge
+'crisper-drawer' -> '/Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/fridge/crisper-drawer'
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/pantry
+$ cd ..
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ cd trashcan
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/trashcan
+$ mv sink /Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/
+'sink' -> '/Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/sink'
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/trashcan
+$ cd ..
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── delete-me.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 12 files
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ cd sink
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/sink
+$ rm delete-me.txt
+removed 'delete-me.txt'
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/sink
+$ mkdir drying-rack/
+gmkdir: created directory 'drying-rack/'
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/sink
+$ mv clean-dishes.txt /Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/fridge/sink/drying-rack
+'clean-dishes.txt' -> '/Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/fridge/sink/drying-rack'
+gmv: cannot move 'clean-dishes.txt' to '/Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/fridge/sink/drying-rack': No such file or directory
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/sink
+$ ls
+clean-dishes.txt  dirty-dishes.txt  drying-rack/
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/sink
+$ mv clean-dishes.txt /Users/julianamichelsen/code/wdi/wdi-tx-10/homework/sink/drying-rack/
+'clean-dishes.txt' -> '/Users/julianamichelsen/code/wdi/wdi-tx-10/homework/sink/drying-rack/'
+gmv: cannot move 'clean-dishes.txt' to '/Users/julianamichelsen/code/wdi/wdi-tx-10/homework/sink/drying-rack/': No such file or directory
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/sink
+$ mv clean-dishes.txt /Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/sink/drying-rack/
+'clean-dishes.txt' -> '/Users/julianamichelsen/code/wdi/wdi-tx-10/homework/kitchen2/sink/drying-rack/clean-dishes.txt'
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/sink
+$ tree
+.
+├── dirty-dishes.txt
+└── drying-rack
+    └── clean-dishes.txt
+
+1 directory, 2 files
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2/sink
+$ cd ../
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 11 files
+julianamichelsen ~/code/wdi/wdi-tx-10/homework/kitchen2
+$ 
